@@ -1,6 +1,14 @@
 import React, {Component} from 'react';
 
 class Counter extends Component {
+  // Add constructor directly under Counter class and before render method'
+  // Initialize state by setting 'this.state' to a Javascript object
+    constructor() {
+      super();
+      this.state = { 
+        count: 0,
+      };
+    }
   render () {
     return(
       <div>TEST</div>
