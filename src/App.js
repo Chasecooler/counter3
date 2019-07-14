@@ -11,7 +11,15 @@ class Counter extends Component {
     }
   render () {
     return(
-      <div>TEST</div>
+      <div className="container">
+        <div className="navbar">Counter.js</div>
+        <div className="counter">
+          <h1>What do we put here?</h1>
+          <button type="button">Increment Counter</button>
+          <button type="button">Decrement Counter</button>
+        </div>
+      </div>
+      // <div>TEST</div>
     )
   }
 }
