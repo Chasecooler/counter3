@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 
 class Counter extends Component {
-  render (
+  render () {
     return(
       <div></div>
     )
-  )
+  }
 }
 
 export default Counter;
