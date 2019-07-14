@@ -9,14 +9,21 @@ class Counter extends Component {
         count: 0,
       };
     }
+
+    increment =() => {
+      this.setState ({
+        count: this.state.count + 1
+      })
+
+    };
   render () {
     return(
       <div className="container">
         <div className="navbar">Counter.js</div>
         <div className="counter">
           <h1>{this.state.count}</h1>
-          <button type="button">Increment Counter</button>
-          <button type="button">Decrement Counter</button>
+          <button type="button" onClick={this.increment}>Select to Increment Counter</button>
+          <button type="button">Select to Decrement Counter</button>
         </div>
       </div>
       // <div>TEST</div>
