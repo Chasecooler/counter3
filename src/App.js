@@ -1,12 +1,26 @@
 import React, {Component} from 'react';
 
-class HelloWorld extends Component {
-  render () {
-    return (
-      <div>Hello World</div>
+class Counter extends Component {
+  render (
+    return(
+      <div></div>
     )
-  }
+  )
 }
+
+export default Counter;
+
+
+// class HelloWorld extends Component {
+//   render () {
+//     return (
+//       <div>Hello World</div>
+//     )
+//   }
+// }
+
+// export default HelloWorld;
+
 
 // import React from 'react';
 // import logo from './logo.svg';
