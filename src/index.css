@@ -63,6 +63,14 @@ body {
 
 }
 
+/* RESET */
+
+#reset {
+
+  background-color: red;
+  color: white;
+  margin: 20px;
+}
 
 
 .container {
