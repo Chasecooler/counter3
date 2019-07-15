@@ -6,19 +6,22 @@ class Counter extends Component {
   constructor() {
     super();
     this.state = {
-      count: 0
+      count: 0,
+      inc: 1,
+      // min_limit: 0,
+      // max_limit: 30,
     };
   }
 
   increment = () => {
     this.setState({
-      count: this.state.count + 1
+      count: this.state.count + this.state.inc
     });
   };
 
   decrement = () => {
     this.setState({
-      count: this.state.count - 1
+      count: this.state.count - this.state.inc
     });
   };
 
@@ -29,28 +32,21 @@ class Counter extends Component {
     });
   };
 
-  // TOGGLE
+  // TOGGLE ... Increments either Double or Single by "inc"
   toggle = () => {
-    this.setState({
-      count: this.state.count + 2
-    });
+    if (this.state.inc == 1) {
+      this.setState({
+        inc: 2
+      })
+    }
+    if (this.state.inc == 2) {
+      this.setState({
+        inc: 1
+      })
+    }
   };
 
-  // toggle = () => {
-  //  if (coumt = 0 || count > 0 || count !> 20) {
-  //  document.getElementById{'button'}.innerHTML =
-  //  '<button id="toggle"
-  //  onClick="buttonClick(\'1\')">Decrement By 2</button>';
-  //
-  //  this.setState ({
-  //  count: this.state.count + 2
-  //});
-  //
-  //})}
-  //}
-  //
-  // 
-
+  // toggle end
 
   render() {
     return (
@@ -58,6 +54,7 @@ class Counter extends Component {
         <div className="navbar">Counter.js</div>
         <div className="counter">
           <h1>{this.state.count}</h1>
+          <h2>Current Increment Size: {this.state.inc}</h2>
           <button type="button" onClick={this.increment}>
             Select to Increment Counter
           </button>
