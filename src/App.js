@@ -23,12 +23,17 @@ class Counter extends Component {
 
     };
 
+    // RESET
     reset =() => {
       this.setState (
         {
           count: this.state.count * 0
         })
     };
+
+// TOGGLE
+
+
   render () {
     return(
       <div className="container">
