@@ -3,51 +3,61 @@ import React, {Component} from 'react';
 class Counter extends Component {
   // Add constructor directly under Counter class and before render method'
   // Initialize state by setting 'this.state' to a Javascript object
-    constructor() {
-      super();
-      this.state = { 
-        count: 0,
-      };
-    }
-
-    increment =() => {
-      this.setState ({
-        count: this.state.count + 1
-      })
+  constructor() {
+    super();
+    this.state = {
+      count: 0
     };
+  }
 
-    decrement =() => {
-      this.setState ({
-        count: this.state.count - 1
-      })
+  increment = () => {
+    this.setState({
+      count: this.state.count + 1
+    });
+  };
 
-    };
+  decrement = () => {
+    this.setState({
+      count: this.state.count - 1
+    });
+  };
 
-    // RESET
-    reset =() => {
-      this.setState (
-        {
-          count: this.state.count * 0
-        })
-    };
+  // RESET
+  reset = () => {
+    this.setState({
+      count: this.state.count * 0
+    });
+  };
 
-// TOGGLE
+  // TOGGLE
+  toggle = () => {
+    this.setState({
+      count: this.state.count + 2
+    });
+  };
 
-
-  render () {
-    return(
+  render() {
+    return (
       <div className="container">
         <div className="navbar">Counter.js</div>
         <div className="counter">
           <h1>{this.state.count}</h1>
-          <button type="button" onClick={this.increment}>Select to Increment Counter</button>
-          <button type="button" onClick={this.decrement}>Select to Decrement Counter</button>
-          <button id="reset" type="button" onClick={this.reset}>Select to RESET</button>
-          <button id="toggle" type="button" onClick={this.toggle}>Select to TOGGLE</button>
+          <button type="button" onClick={this.increment}>
+            Select to Increment Counter
+          </button>
+          <button type="button" onClick={this.decrement}>
+            Select to Decrement Counter
+          </button>
+          <button id="reset" type="button" onClick={this.reset}>
+            Select to RESET
+          </button>
+          <button id="toggle" type="button" onClick={this.toggle}>
+            Select to TOGGLE
+          </button>
         </div>
       </div>
       // <div>TEST</div>
-    )
+    );
   }
 }
 
