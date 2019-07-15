@@ -36,6 +36,22 @@ class Counter extends Component {
     });
   };
 
+  // toggle = () => {
+  //  if (coumt = 0 || count > 0 || count !> 20) {
+  //  document.getElementById{'button'}.innerHTML =
+  //  '<button id="toggle"
+  //  onClick="buttonClick(\'1\')">Decrement By 2</button>';
+  //
+  //  this.setState ({
+  //  count: this.state.count + 2
+  //});
+  //
+  //})}
+  //}
+  //
+  // 
+
+
   render() {
     return (
       <div className="container">
