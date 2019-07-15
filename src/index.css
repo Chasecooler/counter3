@@ -67,9 +67,17 @@ body {
 
 #reset {
 
-  background-color: red;
+  background-color: blueviolet;
   color: white;
   margin: 20px;
+
+}
+
+#reset:hover {
+
+  /* background-color: #65878F; */
+  background-color: red;
+
 }
 
 
