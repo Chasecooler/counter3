@@ -80,6 +80,18 @@ body {
 
 }
 
+#toggle {
+  background-color: blue;
+  color: white;
+  margin: 20px;
+}
+
+#toggle:hover {
+
+ /* background-color: #65878F; */
+  background-color: goldenrod;  
+}
+
 
 .container {
 

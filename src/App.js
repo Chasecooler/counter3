@@ -38,6 +38,7 @@ class Counter extends Component {
           <button type="button" onClick={this.increment}>Select to Increment Counter</button>
           <button type="button" onClick={this.decrement}>Select to Decrement Counter</button>
           <button id="reset" type="button" onClick={this.reset}>Select to RESET</button>
+          <button id="toggle" type="button" onClick={this.toggle}>Select to TOGGLE</button>
         </div>
       </div>
       // <div>TEST</div>
