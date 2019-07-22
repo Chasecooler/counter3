@@ -51,7 +51,7 @@ class Counter extends Component {
   render() {
     return (
       <div className="container">
-        <div className="navbar">Counter.js</div>
+        <div className="navbar">counter.js</div>
         <div className="counter">
           <h1>{this.state.count}</h1>
           <h2>Current Increment Size: {this.state.inc}</h2>
